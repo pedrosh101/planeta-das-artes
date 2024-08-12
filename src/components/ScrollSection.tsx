@@ -1,9 +1,11 @@
-'use client'
+"use client";
 
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
+import Image from "next/image";
+import capaImp from "../../public/capaImp.png";
+import capaOrig from "../../public/capaOrig.jpg";
 
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -31,38 +33,62 @@ function ScrollSection() {
       }
     );
     return () => {
-      {/* A return function for killing the animation on component unmount */ }
       pin.kill();
     };
   }, []);
 
   return (
-    <section className="scroll-section-outer">
-      {/* The section up act just as a wrapper. If the trigger (below) is the
-      first jsx element in the component, you get an error on route change */}
-
-      {/* The div below act just as a trigger. As the doc suggests, the trigger and 
-      the animation should alway be two separated refs */}
+    <section className="scroll-section-outer font-font2 text-white text-4xl">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section">
-            <h3>Section 1</h3>
+          <div className="scroll-section flex flex-col space-y-8 tracking-[40px]">
+            <h3 className="ml-10">Impressões</h3>
+            <div className="relative w-full h-[70vh]">
+              <Image
+                src={capaImp}
+                alt="image1"
+                fill
+                className="object-contain md:h-96"
+              />
+            </div>
           </div>
           <div className="scroll-section">
-            <h3>Section 2</h3>
+            <div className="flex flex-col w-[48vw]">
+              <h3 className="font-mainFont text-5xl tracking-wider mb-4">
+                IMPRESSÕES DE ALTA QUALIDADE
+              </h3>
+              <h2 className="text-2xl font-font3">
+                São as reproduções das minhas ilustrações originais, produzidos
+                em baixa tiragem, os prints são impressoes em impressora
+                profissional depois das etapas de digitalização, edição das
+                imagens. os prints são uma forma de democratizar, de maneira
+                justa, o acesso à minha arte.
+              </h2>
+            </div>
+          </div>
+          <div className="scroll-section flex flex-col space-y-8 tracking-[40px]">
+            <h3 className="ml-10">Originais</h3>
+            <div className="relative w-full h-[70vh]">
+              <Image
+                src={capaOrig}
+                alt="image1"
+                fill
+                className="object-contain md:h-96"
+              />
+            </div>
           </div>
           <div className="scroll-section">
-            <h3>Section 3</h3>
-            <h2>Opa</h2>
-          </div>
-          <div className="scroll-section">
-            <h3>Section 4</h3>
-          </div>
-          <div className="scroll-section">
-            <div className="flex">
-
-            <h3>Section 5 com bastante conteúdo</h3>
-            <h3>ainda tem coisa aqui</h3>
+            <div className="flex flex-col w-[48vw]">
+              <h3 className="font-mainFont text-5xl tracking-wider mb-4">
+                AO "VIVO" E A "CORES"
+              </h3>
+              <h2 className="text-2xl font-font3">
+                Minha produção artística de concentra na técnica da aquarela,
+                porém pode ser que você encontre por aqui alguns trabalhos em
+                guache e acrílica sobre papel ou tela. Os preços diferem dos
+                prints, pois apresentam qualidade superior, tanto em termos de
+                pigmento, quanto de superfície.
+              </h2>
             </div>
           </div>
         </div>

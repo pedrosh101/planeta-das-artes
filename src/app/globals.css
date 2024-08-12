@@ -1,22 +1,31 @@
-html,
-body,
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --backgroundColor: #292929;
   --primaryColor: white;
-  --primaryTextColor: #e6e6e6;
+  --primaryTextColor: white;
 
   --headlineBig: clamp(5rem, 9.9vw, 15rem);
   --headlineMedium: clamp(1rem, 2vw, 4rem);
   --headlineSmall: clamp(0.6rem, 0.75vw, 1.3rem);
   --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
+}
+
+@font-face {
+  font-family: "MAINFONT";
+  src: url("../../public/fonts/mainFont.otf");
+}
+
+@font-face {
+  font-family: "FONT2";
+  src: url("../../public/fonts/font2.ttf");
+}
+
+@font-face {
+  font-family: "FONT3";
+  src: url("../../public/fonts/font3.otf");
 }
 
 body {
@@ -34,17 +43,10 @@ body {
 }
 
 .hero__header h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: var(--headlineBig);
   color: var(--primaryTextColor);
 }
 
-.hero__header h2 {
-  letter-spacing: var(--headlineSmall);
-  font-size: var(--headlineSmall);
-  text-transform: uppercase;
-  color: var(--primaryColor);
-}
+
 
 .scroll-section-outer {
   overflow: hidden;
@@ -68,8 +70,8 @@ body {
 
 .scroll-section h3 {
   color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
+
+
   text-transform: uppercase;
 }
 
@@ -78,10 +80,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(236,158,137);
+background: linear-gradient(180deg, rgba(236,158,137,1) 35%, rgba(176,255,0,0.24693627450980393) 100%);
 }
 
 .footer span {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
   font-size: var(--headlineBig);
   color: var(--primaryTextColor);
 }
