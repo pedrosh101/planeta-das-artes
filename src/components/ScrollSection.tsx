@@ -38,57 +38,63 @@ function ScrollSection() {
   }, []);
 
   return (
-    <section className="scroll-section-outer font-font2 text-white text-4xl">
+    <section className="scroll-section-outer font-font2 text-white sm:text-4xl text-2xl">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
-          <div className="scroll-section flex flex-col space-y-8 tracking-[40px]">
+          <div className="scroll-section flex flex-col space-y-8 sm:tracking-[40px] tracking-[10px] ">
             <h3 className="ml-10">Impressões</h3>
             <div className="relative w-full h-[70vh]">
               <Image
                 src={capaImp}
                 alt="image1"
                 fill
-                className="object-contain md:h-96"
+                className="object-contain md:h-96 mx-4 sm:mx-0"
               />
             </div>
           </div>
-          <div className="scroll-section">
-            <div className="flex flex-col w-[48vw]">
-              <h3 className="font-mainFont text-5xl tracking-wider mb-4">
+          <div className="scroll-section px-24 sm:px-0">
+            <div className="flex flex-col sm:w-[48vw] w-[90vw]">
+              <h3 className="font-mainFont sm:text-5xl tracking-wider mb-4">
                 IMPRESSÕES DE ALTA QUALIDADE
               </h3>
-              <h2 className="text-2xl font-font3">
+              <h2 className="sm:text-2xl text-xl font-font3">
                 São as reproduções das minhas ilustrações originais, produzidos
                 em baixa tiragem, os prints são impressoes em impressora
                 profissional depois das etapas de digitalização, edição das
                 imagens. os prints são uma forma de democratizar, de maneira
                 justa, o acesso à minha arte.
               </h2>
+              <button className="w-fit font-font3 mt-6 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
+                Ver Todas
+              </button>
             </div>
           </div>
-          <div className="scroll-section flex flex-col space-y-8 tracking-[40px]">
+          <div className="scroll-section flex flex-col space-y-8 sm:tracking-[40px] tracking-[10px] ">
             <h3 className="ml-10">Originais</h3>
             <div className="relative w-full h-[70vh]">
               <Image
                 src={capaOrig}
                 alt="image1"
                 fill
-                className="object-contain md:h-96"
+                className="object-contain md:h-96 mx-4 sm:mx-0"
               />
             </div>
           </div>
-          <div className="scroll-section">
-            <div className="flex flex-col w-[48vw]">
-              <h3 className="font-mainFont text-5xl tracking-wider mb-4">
+          <div className="scroll-section px-24 sm:px-0">
+            <div className="flex flex-col sm:w-[48vw] w-[90vw]">
+              <h3 className="font-mainFont sm:text-5xl tracking-wider mb-4">
                 AO &quot;VIVO&quot; E A &quot;CORES&quot;
               </h3>
-              <h2 className="text-2xl font-font3">
+              <h2 className="sm:text-2xl text-xl font-font3">
                 Minha produção artística de concentra na técnica da aquarela,
                 porém pode ser que você encontre por aqui alguns trabalhos em
                 guache e acrílica sobre papel ou tela. Os preços diferem dos
                 prints, pois apresentam qualidade superior, tanto em termos de
                 pigmento, quanto de superfície.
               </h2>
+              <button className="w-fit font-font3 mt-6 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
+                Ver Todas
+              </button>
             </div>
           </div>
         </div>
