@@ -54,7 +54,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section px-16 sm:px-0">
             <div className="flex flex-col sm:w-[48vw] w-[90vw]">
-              <h3 className="font-mainFont sm:text-5xl text-3xl tracking-wider mb-4">
+              <h3 className="font-mainFont sm:text-5xl text-xl tracking-wider mb-4">
                 IMPRESSÕES DE ALTA QUALIDADE
               </h3>
               <h2 className="sm:text-2xl text-lg font-font3">
@@ -64,7 +64,7 @@ function ScrollSection() {
                 imagens. os prints são uma forma de democratizar, de maneira
                 justa, o acesso à minha arte.
               </h2>
-              <button className="w-fit font-font3 mt-6 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
+              <button className="w-fit font-font3 mt-3 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
                 Ver Todas
               </button>
             </div>
@@ -82,7 +82,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section px-16 sm:px-0">
             <div className="flex flex-col sm:w-[48vw] w-[90vw]">
-              <h3 className="font-mainFont sm:text-5xl text-3xl tracking-wider mb-4">
+              <h3 className="font-mainFont sm:text-5xl text-xl tracking-wider mb-4">
                 AO &quot;VIVO&quot; E A &quot;CORES&quot;
               </h3>
               <h2 className="sm:text-2xl text-lg font-font3">
@@ -92,7 +92,7 @@ function ScrollSection() {
                 prints, pois apresentam qualidade superior, tanto em termos de
                 pigmento, quanto de superfície.
               </h2>
-              <button className="w-fit font-font3 mt-6 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
+              <button className="w-fit font-font3 mt-3 hover:bg-amber-400/30 text-base text-white font-semibold hover:text-white py-2 px-4 border border-ehite hover:border-transparent rounded">
                 Ver Todas
               </button>
             </div>
