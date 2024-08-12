@@ -54,10 +54,10 @@ function ScrollSection() {
           </div>
           <div className="scroll-section px-16 sm:px-0">
             <div className="flex flex-col sm:w-[48vw] w-[90vw]">
-              <h3 className="font-mainFont sm:text-5xl text-xl tracking-wider mb-4">
+              <h3 className="font-mainFont sm:text-5xl text-2xl tracking-wider mb-4">
                 IMPRESSÕES DE ALTA QUALIDADE
               </h3>
-              <h2 className="sm:text-2xl text-lg font-font3">
+              <h2 className="sm:text-2xl text-base font-font3">
                 São as reproduções das minhas ilustrações originais, produzidos
                 em baixa tiragem, os prints são impressoes em impressora
                 profissional depois das etapas de digitalização, edição das
@@ -82,10 +82,10 @@ function ScrollSection() {
           </div>
           <div className="scroll-section px-16 sm:px-0">
             <div className="flex flex-col sm:w-[48vw] w-[90vw]">
-              <h3 className="font-mainFont sm:text-5xl text-xl tracking-wider mb-4">
+              <h3 className="font-mainFont sm:text-5xl text-2xl tracking-wider mb-4">
                 AO &quot;VIVO&quot; E A &quot;CORES&quot;
               </h3>
-              <h2 className="sm:text-2xl text-lg font-font3">
+              <h2 className="sm:text-2xl text-base font-font3">
                 Minha produção artística de concentra na técnica da aquarela,
                 porém pode ser que você encontre por aqui alguns trabalhos em
                 guache e acrílica sobre papel ou tela. Os preços diferem dos
