@@ -80,7 +80,7 @@ function ScrollSection() {
           <div className="scroll-section">
             <div className="flex flex-col w-[48vw]">
               <h3 className="font-mainFont text-5xl tracking-wider mb-4">
-                AO "VIVO" E A "CORES"
+                AO &quot;VIVO&quot; E A &quot;CORES&quot;
               </h3>
               <h2 className="text-2xl font-font3">
                 Minha produção artística de concentra na técnica da aquarela,
